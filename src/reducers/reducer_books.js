@@ -4,9 +4,9 @@
 // 2. wire our reducer: add it to index.js, const rootReducer = combineReducers
 export default function() {
     return [
-        {title: 'JavaScript: the Good Parts'},
-        {title: 'Happy Potter'},
-        {title: 'Eloquent JS'},
-        {title: 'Americanah'}
-    ]
+        {title: 'JavaScript: the Good Parts', pages: 101 },
+        {title: 'Happy Potter', pages:50 },
+        {title: 'Eloquent JS', pages: 40 },
+        {title: 'Americanah', pages: 206 }
+    ];
 }
