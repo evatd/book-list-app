@@ -9,14 +9,13 @@
 
 // Now we want to enhance our action creator and add an actual action, delete the console.log
 export function selectBook(book) {
-   // Just a check, can remove now: console.log('A book has been selected:', book.title);
-    // selectBook is an action creator, it needs to return an action.
-    // an object with a type property.
-    // Every action must have a type that describes the action (i.e. the user selecting a book; write in upper case)
-    // and sometimes a payload (i.e.a piece of data that describes the action that is being undertaken).
-    return {
-       type: 'BOOK_SELECTED',
-        payload: book
-    };
+  // Just a check, can remove now: console.log('A book has been selected:', book.title);
+  // selectBook is an action creator, it needs to return an action.
+  // an object with a type property.
+  // Every action must have a type that describes the action (i.e. the user selecting a book; write in upper case)
+  // and sometimes a payload (i.e.a piece of data that describes the action that is being undertaken).
+  return {
+    type: "BOOK_SELECTED",
+    payload: book
+  };
 }
-
