@@ -4,9 +4,9 @@
 // So, go to book-list.js and import 'react-redux' library
 // Also, import individual containers, to make sure they get rendered ,
 // + add the components to the render() method below.
-import React, { Component } from 'react';
-import BookList from '../containers/book-list';
-import BookDetail from '../containers/book-detail';
+import React, { Component } from "react";
+import BookList from "../containers/book-list";
+import BookDetail from "../containers/book-detail";
 
 // We render BookList which is a container/smart component (React side), bonded to the application state (help by Redux)
 // When we saw the list in the browser, behind the scenes:
@@ -17,9 +17,9 @@ import BookDetail from '../containers/book-detail';
 export default class App extends Component {
   render() {
     return (
-        <div>
-          <BookList />
-          <BookDetail/>
+      <div>
+        <BookList />
+        <BookDetail />
       </div>
     );
   }
