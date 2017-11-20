@@ -10,16 +10,16 @@
 // So this.props.book.title in book-detail will expect a property there (props) but will no encounter a property and will instead get null = error.
 // Need to add in a check in the render method in book-detail.
 export default function(state = null, action) {
-    // The case where we care about the action:
-    // And we ony care about selected book case
-    // and if a book is selected then return payload: the book that was selected.
-    switch (action.type) {
-        case 'BOOK_SELECTED':
-            return action.payload;
-    }
+  // The case where we care about the action:
+  // And we ony care about selected book case
+  // and if a book is selected then return payload: the book that was selected.
+  switch (action.type) {
+    case "BOOK_SELECTED":
+      return action.payload;
+  }
 
-    // If the action is anything else we'll just return a state:
-    // i.e. if it's not book_selected type of action;
-    // our action is not a user's selecting a book.
-    return state;
+  // If the action is anything else we'll just return a state:
+  // i.e. if it's not book_selected type of action;
+  // our action is not a user's selecting a book.
+  return state;
 }
