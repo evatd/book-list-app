@@ -3,10 +3,10 @@
 // Need to export our function via export default,and any other file inside our project can import this file and it will receive the list of books=reducer
 // 2. wire our reducer: add it to index.js, const rootReducer = combineReducers
 export default function() {
-    return [
-        {title: 'JavaScript: the Good Parts', pages: 101 },
-        {title: 'Happy Potter', pages:50 },
-        {title: 'Eloquent JS', pages: 40 },
-        {title: 'Americanah', pages: 206 }
-    ];
+  return [
+    { title: "JavaScript: the Good Parts", pages: 101 },
+    { title: "Happy Potter", pages: 50 },
+    { title: "Eloquent JS", pages: 40 },
+    { title: "Americanah", pages: 206 }
+  ];
 }
